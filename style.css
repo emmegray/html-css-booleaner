@@ -2,7 +2,7 @@ body {
 margin: auto;
 }
 
-.head {
+body > header {
     background-image: url("img/pattern.png");
     background-color: #4EA0FF;
     background-repeat: repeat;
@@ -14,7 +14,7 @@ margin: auto;
 .logo {
     display: block;
     padding-left: 5px;
-    height: 100%;
+    max-height: 50px;
     width: auto;
 }
 
@@ -23,13 +23,27 @@ main {
    padding-right: 30px;
 }
 
-.main-title {
+main >* {
+    margin-bottom: 1rem;
+}
 
+main, .head {
+   margin: 0 auto;
+   max-width: 1024px;
+}
+
+.title {
+    margin: 15px 0px;
 }
 
 .subtitle {
     color: rgb(146, 146, 146);
     font-size:larger;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
 }
 
 a {
@@ -38,10 +52,6 @@ a {
 }
 
 .photo-tim {
-    padding-top: 10px;
-}
-
-.main-text {
     padding-top: 10px;
 }
 
@@ -66,26 +76,41 @@ a {
     font-size:larger;
 }
 
-.head-table {
-    background-color: #4EA0FF;
+ul {
+    padding-left: 15px;
+}
+
+.info {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.info > header {
+    background-color: #20a9e5;
     color: white;
 }
 
-table td {
-    padding: 0;
+.info section {
+display: flex;
+align-items: center;
 }
 
-table.d {
-    table-layout: fixed;
-    width: 100%;  
-  }
+.info > header, .info > section {
+    width: 100%;
+    display: flex;
+}
 
-  thead.a {
-      background-color: #4EA0FF;
-      color: white;
-      text-align: left;
-  }
+.info > header > div:nth-child(1), .info > section > div:nth-child(1) {
+    flex: 25%;
+}
 
-tbody tr:nth-child(odd) {
-      background-color: aquamarine;
-  }
+.info > header > div:nth-child(2), .info > section > div:nth-child(2) {
+    flex: 25%;
+}
+.info > header > div:nth-child(3), .info > section > div:nth-child(3) {
+    flex: 50%;
+}
+
+.info > section:nth-child(even) {
+    background-color: #b1e5f2;
+}
