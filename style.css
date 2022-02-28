@@ -18,8 +18,13 @@ margin: auto;
     width: auto;
 }
 
+main {
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
 .main-title {
-    
+
 }
 
 .subtitle {
@@ -32,5 +37,13 @@ a {
 }
 
 .photo-tim {
-    padding: 10px;
+    padding-top: 10px;
+}
+
+.main-text {
+    padding-top: 10px;
+}
+
+.highlighted {
+    background-color: yellow;
 }
