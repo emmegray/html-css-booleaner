@@ -1,12 +1,36 @@
+body {
+margin: auto;
+}
+
 .head {
     background-image: url("img/pattern.png");
-    background-color: rgb(0, 162, 255);
-    background-repeat: repeat-x;
-    background-size: contain;
+    background-color: #4EA0FF;
+    background-repeat: repeat;
     background-size: 20%;
-    height: 80px;
+    height: 50px;
+    padding-top: 20px;
 }
 
 .logo {
-    width: 15%;
+    display: block;
+    padding-left: 5px;
+    height: 100%;
+    width: auto;
+}
+
+.main-title {
+    
+}
+
+.subtitle {
+    color: rgb(146, 146, 146);
+}
+
+a {
+    color: #4EA0FF;
+    text-decoration: none;
+}
+
+.photo-tim {
+    padding: 10px;
 }
