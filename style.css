@@ -29,6 +29,7 @@ main {
 
 .subtitle {
     color: rgb(146, 146, 146);
+    font-size:larger;
 }
 
 a {
@@ -47,3 +48,37 @@ a {
 .highlighted {
     background-color: yellow;
 }
+
+.bottom {
+    padding-top: 20px;
+}
+
+.bottom-photo {
+    padding-top: 10px;
+    position: relative;
+    color: white;    
+}
+
+.top-left {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size:larger;
+}
+
+.head-table {
+    background-color: #4EA0FF;
+    color: white;
+}
+
+/*
+ {
+    background-color: #4EA0FF;
+    color: white;
+}
+
+thead {
+    background-color: #4EA0FF;
+    color: white;
+}
+*/
