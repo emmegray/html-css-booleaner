@@ -71,14 +71,21 @@ a {
     color: white;
 }
 
-/*
- {
-    background-color: #4EA0FF;
-    color: white;
+table td {
+    padding: 0;
 }
 
-thead {
-    background-color: #4EA0FF;
-    color: white;
-}
-*/
+table.d {
+    table-layout: fixed;
+    width: 100%;  
+  }
+
+  thead.a {
+      background-color: #4EA0FF;
+      color: white;
+      text-align: left;
+  }
+
+tbody tr:nth-child(odd) {
+      background-color: aquamarine;
+  }
